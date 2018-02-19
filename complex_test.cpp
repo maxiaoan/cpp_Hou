@@ -1,11 +1,9 @@
 #include <iostream>
 #include "complex.h"
-
 using namespace std;
 
 //返回值非local变量，所以返回引用
-ostream& 
-operator <<(ostream& os, const complex& x)
+ostream& operator <<(ostream& os, const complex& x)
 {
 	return os<<'('<<real(x) <<','<<imag(x)<<')';
 }
